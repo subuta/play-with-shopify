@@ -1,0 +1,21 @@
+require('dotenv').config()
+
+const NODE_ENV = process.env.NODE_ENV || 'development'
+const ENV_NAME = NODE_ENV
+const dev = NODE_ENV === 'development'
+
+const SHOPIFY_API_SHOP_DOMAIN = process.env.SHOPIFY_API_SHOP_DOMAIN
+const SHOPIFY_API_VERSION = process.env.SHOPIFY_API_VERSION
+const SHOPIFY_API_STOREFRONT_ACCESS_TOKEN = process.env.SHOPIFY_API_STOREFRONT_ACCESS_TOKEN
+const SHOPIFY_API_TARGET_COLLECTION_HANDLE = process.env.SHOPIFY_API_TARGET_COLLECTION_HANDLE
+
+module.exports = {
+  env: {
+    ENV_NAME,
+    SHOPIFY_API_SHOP_DOMAIN,
+    SHOPIFY_API_VERSION,
+    SHOPIFY_API_STOREFRONT_ACCESS_TOKEN,
+    SHOPIFY_API_TARGET_COLLECTION_HANDLE,
+    BASE_URL: process.env.BASE_URL || '',
+  },
+}

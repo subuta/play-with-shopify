@@ -1,0 +1,19 @@
+.products {
+  @apply flex items-start flex-wrap;
+
+  margin: theme('margin.6') calc(theme('margin.4') * -1) 0;
+
+  @screen md {
+    @apply items-center;
+  }
+}
+
+.product {
+  @apply mb-6 mx-4;
+
+  width: calc(50% - theme('margin.4') * 2);
+
+  @screen md {
+    @apply mb-0 w-auto;
+  }
+}

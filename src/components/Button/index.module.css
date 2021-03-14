@@ -1,0 +1,11 @@
+.base {
+  @apply py-3 px-4 font-bold border border-transparent;
+}
+
+.bordered {
+  @apply border-gray-700 text-gray-700 rounded-sm;
+}
+
+.filled {
+  @apply bg-gray-700 text-white rounded-sm;
+}

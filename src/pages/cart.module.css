@@ -1,0 +1,67 @@
+.cartTable {
+  @apply table-fixed w-full;
+
+  & tr {
+    @apply border-b;
+  }
+
+  & tr th {
+    &:first-of-type {
+      @apply w-3/5;
+    }
+  }
+
+  & tr th, & tr td {
+    @apply py-6;
+  }
+
+  & thead tr th {
+    @apply uppercase font-normal tracking-wide;
+  }
+}
+
+.totalCol {
+  @apply text-right;
+}
+
+th.totalCol {
+  width: 100px;
+}
+
+.priceCol {
+  @apply text-right;
+
+  @screen md {
+    @apply text-left;
+  }
+}
+
+.checkoutBtn {
+  @apply uppercase bg-black;
+}
+
+tr.noBorder {
+  @apply border-0;
+}
+
+tr.hiddenOnMobile {
+  display: none;
+
+  @screen md {
+    display: table-row;
+  }
+}
+
+th.hiddenOnMobile, td.hiddenOnMobile {
+  display: none;
+
+  @screen md {
+    display: table-cell;
+  }
+}
+
+.backdrop {
+  @apply fixed inset-0 flex items-center justify-center;
+
+  background: rgba(0, 0, 0, 0.4);
+}

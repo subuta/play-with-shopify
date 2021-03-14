@@ -1,0 +1,51 @@
+{
+  "name": "play-with-shopify",
+  "version": "1.0.0",
+  "description": "Custom storefront implementation with Shopify",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:prod": "cd out && serve -l 8080",
+    "export": "npm run build && next -- export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subuta/play-with-shopify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subuta/play-with-shopify/issues"
+  },
+  "homepage": "https://github.com/subuta/play-with-shopify#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.19.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
+    "lodash": "^4.17.21",
+    "next": "^10.0.8",
+    "numeral": "^2.0.6",
+    "qs": "^6.9.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-notification-system": "^0.4.0",
+    "react-powerplug": "^1.0.0",
+    "unstated-next": "^1.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.5",
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2",
+    "tailwindcss": "^1.9.6"
+  }
+}
