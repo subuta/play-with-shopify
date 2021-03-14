@@ -1,6 +1,6 @@
 # play-with-shopify
 
-Custom storefront implementation with Shopify
+Custom storefront implementation with Shopify.
 
 ## How to develop Private App (with Storefront API)
 
